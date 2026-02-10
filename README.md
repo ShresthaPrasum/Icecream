@@ -3,7 +3,7 @@
 ## Creation Date Proof Screenshots
 
 ### Main folder Creation Date
-![Home](Proof1.png)
+![Main](Img/image.png)
 
 ### Html file creation Date
-![Game](Proof2.png)
+![Files](Img/Proof1.png)

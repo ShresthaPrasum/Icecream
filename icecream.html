@@ -7,66 +7,7 @@
   <title></title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    .header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      z-index: 999;
-      position: fixed;
-    }
 
-    .nav {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 80%;
-      padding: 10px 0px 10px 0px;
-      background-color: #fffaea;
-      border-radius: 15px;
-      margin-top: 60px;
-      font-family: noice1;
-
-    }
-
-    .first-nav{
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 40%;
-    }
-    ul{
-      display: flex;
-      justify-content: flex-start;
-      gap: 20px;
-      align-items: center;
-      list-style-type: none;
-      width: 100%;
-    }
-    ul li{
-      padding: 10px;
-      font-size: 1.1rem;
-      font-weight: 900;
-    }
-    .middle-nav{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-    .middle-nav img{
-      position: absolute;
-      width: 120px;
-    }
-    .last-nav{
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 40%;
-    }
-    .last-nav ul{
-      justify-content: flex-end;
-    }
 
     .hero{
       display: flex;
@@ -90,7 +31,7 @@
       transform: translate(-50%, -50%);
       font-size: 2.5rem;
       color: #fff;
-      font-family: noice1;
+      font-family: noice2;
     }
     .hero h1{
       position: absolute;
@@ -100,7 +41,7 @@
       font-size: 5rem;
       color: #fff;
       font-weight: bolder;
-      font-family: noice1;
+      font-family: noice2;
     }
 
     .love{
@@ -110,6 +51,8 @@
       width: 100%;
       background-color: #90d5ac;
       position: relative;
+      padding-bottom: 50px;
+      font-family: noice2;
     }
 
     .love img{
@@ -129,15 +72,196 @@
       gap: 10px;
       font-size: 8rem;
       color: #ff0000a5;
-      font-family: boba1;
+
     }
     .love-footer{
-      font-size: 1rem;
+      font-size: 0.8rem;
       text-align: center;
       color: #512d1e;
       width: 50%;
+      font-family: noice1;
     }
     
+    .nic{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      width: 100%;
+      background-color: bisque;
+    }
+
+    .city{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 2rem;
+      color: #ff0000;
+      margin-left: 150px;
+      font-family: boba1;
+      font-weight: bold;
+    }
+
+    .products{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 80px 0px 80px 0px;
+    }
+
+    .product-title{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 2rem;
+      width: 80%;
+    }
+
+    .product-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .product{
+      width: 550px;
+      font-family: noice2;
+      color: #512d1e;
+      border: none;
+      font-size: larger;
+    }
+
+    .product video{
+      width: 100%;
+    }
+
+    .slide-container{
+      width: 100%;
+      overflow: hidden;
+      padding: 20px 0px;
+      font-family: noice2;
+      margin-top: 50px;
+    }
+
+    .slideing-text{
+      display: flex;
+      text-align: center;
+      width: max-content;
+      animation: slide 20s linear infinite;
+      
+    }
+    .slideing-text-middle{
+      display: flex;
+      text-align: center;
+      width: max-content;
+      animation: slide 20s linear reverse infinite;
+    }
+
+    .slideing-text span{
+      font-size: 3rem;
+      font-weight: 100;
+      margin-right: 20px;
+      white-space: nowrap;
+    }
+    @keyframes slide {
+      0% {
+        transform: translate3d(0px, 0px, 0px);
+      }
+
+      100% {
+        transform: translate3d(-33.333%, 0px, 0px);
+      }
+    }
+    @keyframes slide1 {
+      0% {
+        transform: translate3d(0px, 0px, 0px);
+      }
+
+      100% {
+        transform: translate3d(-100%, 0px, 0px);
+      }
+    }
+
+    .scoop{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 80px 140px 80px 200px;
+      background-color: bisque;
+      font-family: noice2;
+      color: #512d1e;
+    }
+
+    .scoop-container{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+     .scoop-title{
+      font-size: 2rem;
+    }
+
+    .scoop-images{
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #512d1e;
+      padding: 50px 80px 20px 100px;
+      color: #fff;
+      font-family: noice2;
+      font-weight: 100;
+    }
+
+    .footer-header {
+        display: flex;
+        width: 100%;
+    }
+    .footer-first {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .footer-logo {
+      display: flex;
+      justify-content: center;
+      width: 30%;
+    }
+    .footer-second {
+        display: flex;
+        width: 20%;
+    }
+    .footer-second img {
+        width: 100%;
+    }
+    .footer-about {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    hr {
+        width: 100%;
+        border: 0.5px solid rgba(0, 0, 0, 0.481);
+    }
   </style>
 </head>
 <body>
@@ -145,9 +269,9 @@
     <div class="nav">
       <div class="first-nav">
         <ul>
-          <li><a href=""></a>Products</li>
-          <li><a href=""></a>Recipes</li>
-          <li><a href=""></a>Experience Ice Cream</li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#love">Love</a></li>
+          <li><a href="#categories">Categories</a></li>
         </ul>
       </div>
       <div class="middle-nav">
@@ -155,21 +279,21 @@
       </div>
       <div class="last-nav">
         <ul>
-          <li><a href=""></a>Brands</li>
-          <li><a href=""></a>Flavor Finder</li>
-          <li><a href=""></a>Flavor Quiz</li>
+          <li><a href="#flavours">Flavours</a></li>
+          <li><a href="#scoop">Scoop</a></li>
+          <li><a href="#footer">Footer</a></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <div class="hero">
+  <div class="hero" id="hero">
     <img src="Img/Homepage_Banner.png" alt="">
     <h3>Flavours as deep as</h3>
     <h1>friendship</h1>
   </div>
 
-  <div class="love">
+  <div class="love" id="love">
     <img src="Img/icecream-flow.5c35c896.png" alt="">
     <div class="love-title">
       <h1>Honest, artisanal and delicious</h1>
@@ -185,8 +309,177 @@
     <div class="love-footer">
       <h1>NIC Ice Creams are all heart, pure milk, and real ingredients in every scoop. Too good to share unless it’s with your BFFs </h1>
     </div>
-      
 
   </div>
+
+  <div class="nic" id="categories">
+    <img src="Img/hand-icecream.png" alt="">
+    <img src="Img/nook-corner.png" alt="">
+    <div class="city">
+
+      <h1>150+</h1>
+      <h1>Cities</h1>
+
+    </div>
+  </div>
+
+  <div class="products" id="flavours">
+    <div class="product-title">
+      <h1>More is Merrier</h1>
+      <p>6 categories and 50 flavours packed with chunks of real fruits and choicest ingredients from across the world that offer deepest flavours in every scoop</p>
+    </div>
+    <div class="product-container">
+      <div class="product">
+        <video src="video/FRUIT_AND_NUT_4_RAKESH_9de632758e_2_56b5959aea.mp4" autoplay muted loop></video>
+        <h1>Fruit N Nut</h1>
+      </div>
+      <div class="product">
+        <video src="video/INDIAN_INSPIRATION_Handbreak_new_f70e5d5048.mp4" autoplay muted loop></video>
+        <h1>Indian Inspiration</h1>
+      </div>
+      <div class="product">
+        <video src="video/International_Classics_New_Handbreak_36295c46e6.mp4" autoplay muted loop></video>
+        <h1>International Classics</h1>
+      </div>
+      <div class="product">
+        <video src="video/NO_ADDED_SUGAR_4_FINAL_LATEST_87e37ef763.mp4" autoplay muted loop></video>
+        <h1>No Added Sugar</h1>
+      </div>
+      <div class="product">
+        <video src="video/PREMIUM_INTERNATIONAL_Handbreak_1448cdc87b_2_9e77102a28.mp4" autoplay muted loop></video>
+        <h1>Premium International</h1>
+      </div>
+      <div class="product">
+        <video src="video/Super_Premium_Handbreak_be94ce1365.mp4" autoplay muted loop></video>
+        <h1>Super Premium</h1>
+      </div>
+    </div>
+    <div class="slide-container">
+
+      <div class="slideing-text">
+        <span>
+          • No artificial colours • Zero added preservatives • No artificial flavours
+        </span>
+        <span>
+          • No artificial colours • Zero added preservatives • No artificial flavours
+        </span>
+        <span>
+          • No artificial colours • Zero added preservatives • No artificial flavours
+        </span>
+      </div>
+      
+    </div>
+    <div class="slide-container">
+
+      <div class="slideing-text">
+        <span>
+          <img src="Img/flavours-row.png" alt="">
+        </span>
+        <span>
+          <img src="Img/flavours-row.png" alt="">
+        </span>
+        <span>
+          <img src="Img/flavours-row.png" alt="">
+        </span>
+      </div>
+      <div class="slideing-text-middle">
+        <span>
+          <img src="Img/flavours-row.png" alt="">
+        </span>
+        <span>
+          <img src="Img/flavours-row.png" alt="">
+        </span>
+        <span>
+          <img src="Img/flavours-row.png" alt="">
+        </span>
+      </div>
+      <div class="slideing-text">
+        <span>
+          <img src="Img/flavours-row.png" alt="">
+        </span>
+        <span>
+          <img src="Img/flavours-row.png" alt="">
+        </span>
+        <span>
+          <img src="Img/flavours-row.png" alt="">
+        </span>
+      </div>
+      
+    </div>
+      
+  </div>
+
+  <div class="scoop" id="scoop">
+    <div class="scoop-container"> 
+        <div class="scoop-title">
+          <h1>The season's best scoop</h1>
+        </div>
+        <div class="scoop-images">
+          <div class="slideing-text">
+            <span>
+              <img src="Img/make_way_slider_two_843983abda.png" alt="">
+              <img src="Img/make_way_slider_three_24147ef578.png" alt="">
+              <img src="Img/make_way_slider_four_81f6198990.png" alt="">
+            </span>
+            <span>
+              <img src="Img/make_way_slider_two_843983abda.png" alt="">
+              <img src="Img/make_way_slider_three_24147ef578.png" alt="">
+              <img src="Img/make_way_slider_four_81f6198990.png" alt="">
+            </span>
+            <span>
+              <img src="Img/make_way_slider_two_843983abda.png" alt="">
+              <img src="Img/make_way_slider_three_24147ef578.png" alt="">
+              <img src="Img/make_way_slider_four_81f6198990.png" alt="">
+            </span>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer" id="footer">
+            <div class="footer-header">
+                <div class="footer-first">
+
+                    <div class="footer-logo">
+                        <img src="Img/Ice-Cream-Logo-Color-Outline-350x350.png" alt="">
+                    </div>
+
+                    <div class="footer-about">
+                        <h4>NIC Story</h4>
+                        <h4>NIC Talks</h4>
+                        <h4>Blogs</h4>
+                        <h4>Videos</h4>
+                        <h4>Press</h4>
+                        <h4>Outdoors</h4>
+                       
+                    </div>
+                    <div class="footer-about">
+                        <h4>Products</h4>
+                        <h4>Fruit N Nut</h4>
+                        <h4>International Inspiration</h4>
+                        <h4>Indian Inspirations</h4>
+                        <h4>Speciality</h4>
+                        <h4>Super Premium</h4>
+                        <h4>No Added Sugar</h4>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4>Our Parlours</h4>
+                        <h4>Contact</h4>
+                        <h4>Privacy Policy</h4>
+                    </div>
+                    <div class="footer-second">
+                        <img src="Img/panda.png" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+            <hr />
+            <div class="footer-footer">
+                <p>© 2026 Mama Bobba. Made by Prasum Shrestha</p>
+
+            </div>
+        </div>
 </body>
 </html>

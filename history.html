@@ -11,7 +11,6 @@
     }
     .story {
         display: flex;
-        height: 100vh;
         padding: 0px 0px 80px 50px;
         justify-content: space-between;
     }
@@ -19,19 +18,97 @@
     .story-first{
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        font-size: 2rem;
+        justify-content: center;
+        width: 40%;
+        gap: 10px;
+
+    }
+    .story-first h1{
+        font-size: 4rem;
+        margin: 0;
     }
     .story-second{
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        width: 50%;
+        width: 60%;
     }
     .story-second img{
         width: 100%;
+        border-radius: 25px;
     }
+    .century{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+        background-color: beige;
+    }
+    .container{
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+    }
+    .first-century{
+        display: flex;
+
+        width: 60%;
+    }
+
+    .first-century img{
+        width: 90%;
+    }
+    .second-century{
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      gap: 30px;
+    }
+
+    .second-century h1{
+        font-size: 3rem;
+    }
+    .second-century h3{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .sec-century{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+    }
+    .thr-century{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+        background-color: beige;
+    }
+    .for-century{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+    }
+
+    .fifth-century{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+    }      
+    .sixth-century{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+      background-color: beige;
+    }
+    .seventh-century{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+    }     
     </style>
 </head>
 <body>
@@ -39,8 +116,8 @@
     <div class="nav">
       <div class="first-nav">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#love">Love</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
           <li><a href="#categories">Categories</a></li>
         </ul>
       </div>
@@ -59,12 +136,101 @@
   <div class="story">
     <div class="story-first">
         <h3>Ice Cream History</h3>
-        <h1>Sit down and let</h1>
-        <h1>us tell you a story</h1>
+        <h1>Sit down and let us tell you a story</h1>
         <h3>It's pretty tasty!</h3>
     </div>
     <div class="story-second">
         <img src="Img/story.jpeg" alt="">
+    </div>
+  </div>
+  <div class="century">
+    <div class="container">
+      <div class="first-century">
+        <img src="Img/5thcentury.png" alt="">
+      </div>
+      <div class="second-century">
+        <h1>5th century B.C.</h1>
+        <h3>Once upon a time</h3>
+        <h3>Ancient Greeks enjoy a dessert similar to ice cream.</h3>
+        <h3>And this is where our story begins!</h3>
+      </div>
+    </div>
+  </div>
+  <div class="sec-century">
+    <div class="container">
+      <div class="second-century">
+        <h1>1300s</h1>
+        <h3>Once upon a time</h3>
+        <h3>Marco Polo brings an early form of ice cream to Europe. We imagine the popular pool game started with ice cream-craving fans searching in the night for Marco! (Polo!)</h3>
+      </div>
+      <div class="first-century">
+        <img src="Img/1300s.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="thr-century">
+    <div class="container">
+      <div class="first-century">
+        <img src="Img/1700s.png" alt="">
+      </div>
+      <div class="second-century">
+        <h1>1700s</h1>
+
+        <h3>Ooo, Fancy!</h3>
+        <h3>Ice Cream is introduced to America as a delicacy enjoyed by high society due to its expensive ingredients and lack of available refrigerators.</h3>
+      </div>
+    </div>
+  </div>
+  <div class="for-century">
+    <div class="container">
+      <div class="second-century">
+        <h1>1776</h1>
+
+        <h3>Open for business</h3>
+        <h3>America's first ice cream parlor opens its doors in New York. And you thought lines were bad today...</h3>
+      </div>
+      <div class="first-century">
+        <img src="Img/1776.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="fifth-century">
+    <div class="container">
+      <div class="first-century">
+        <img src="Img/1840s.png" alt="">
+      </div>
+      <div class="second-century">
+        <h1>1840s</h1>
+        <h3>A labor of love</h3>
+        <h3>Now that's what we call mass production. The ice cream churn is invented, and now we an make ice cream by the bucket</h3>
+        <h1>1851</h1>
+        <h3>First ice cream plant</h3>
+        <h3>Doors open to one of the sweetest buildings ever - the very first ice cream plant.</h3>
+      </div>
+    </div>
+  </div>
+  <div class="sixth-century">
+    <div class="container">
+      <div class="second-century">
+        <h1>1880s</h1>
+        <h3>What a scoop</h3>
+        <h3>Get your fixin's and grap your bowls! The ice cream sundae is born.</h3>
+      </div>
+      <div class="first-century">
+        <img src="Img/1880s.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="seventh-century">
+    <div class="container">
+      <div class="first-century">
+        <img src="Img/1904s.png" alt="">
+      </div>
+      <div class="second-century">
+        <h1>1904</h1>
+        <h3>Hello! Drumstick</h3>
+        <h3>The ice cream cone is invented, making it easier to eat ice cream on the go.</h3>
+      </div>
     </div>
   </div>
 </body>

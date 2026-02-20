@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            padding-top: 10rem;
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .recipe-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 80px;
+        }
+        .recipe{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 350px;
+            border-radius: 10px;
+        }
+        .recipe a img{
+            width: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .recipe a{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+        }
+        .recipe h3{
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="nav">
+      <div class="first-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="recipe.html">Recipe</a></li>
+        </ul>
+      </div>
+      <div class="middle-nav">
+        <img src="Img/Ice-Cream-Logo-Color-Outline-350x350.png" alt="">
+      </div>
+      <div class="last-nav">
+        <ul>
+          <li><a href="#flavours">Flavours</a></li>
+          <li><a href="#scoop">Scoop</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="head">
+      <h1>Ice Cream Recipes</h1>
+  </div>
+  <div class="content">
+    <div class="recipe-container">
+        <div class="recipe">
+            <a href="Recipe/chocolate.html"><img src="Img/recipe1.png" alt=""></a>
+            <h3>Chocolate Ice Cream Cupcakes</h3>
+        </div>
+        <div class="recipe">
+            <a href=""><img src="Img/recipe2.png" alt=""></a>
+            <h3>Caramelized Banana Split Rum Salted Caramel</h3>
+        </div>
+        <div class="recipe">
+            <a href=""><img src="Img/recipe3.png" alt=""></a>
+            <h3>Haagen-Daas Crepes with Chocolate Ice Cream and Raspberry Sauce</h3>
+        </div>
+        <div class="recipe">
+            <a href=""><img src="Img/recipe4.png" alt=""></a>
+            <h3>Haagen-Daas Vanilla Ice Cream Brownie Bars</h3>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

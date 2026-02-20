@@ -109,16 +109,76 @@
       align-items: center;
       padding: 80px;
     }     
+    .eigth-century{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+      background-color: beige;
+    }
+    .ninth-century{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+    }
+    .tenth-century{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+      background-color: beige;
+    }
+    .eleventh-century{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+    }
+    .trending{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+        background-color: beige;
+    }
+    .trending h1{
+      font-size: 3rem;
+      margin-bottom: 40px;
+    }
+    .img-container{
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      gap: 20px;
+    }
+    .img{
+      display: flex;
+      height: 400px;
+      overflow: hidden;
+    }
+    .img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .img img:hover{
+      transform: scale(1.2);
+      transition: transform 0.5s ease;
+    }
+    
     </style>
 </head>
 <body>
-    <div class="header">
+  <div class="header">
     <div class="nav">
       <div class="first-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="history.html">History</a></li>
-          <li><a href="#categories">Categories</a></li>
+          <li><a href="recipe.html">Recipe</a></li>
         </ul>
       </div>
       <div class="middle-nav">
@@ -143,95 +203,204 @@
         <img src="Img/story.jpeg" alt="">
     </div>
   </div>
-  <div class="century">
-    <div class="container">
-      <div class="first-century">
-        <img src="Img/5thcentury.png" alt="">
+  <div class="centuries">
+    <div class="century">
+      <div class="container">
+        <div class="first-century">
+          <img src="Img/5thcentury.png" alt="">
+        </div>
+        <div class="second-century">
+          <h1>5th century B.C.</h1>
+          <h3>Once upon a time</h3>
+          <h3>Ancient Greeks enjoy a dessert similar to ice cream.</h3>
+          <h3>And this is where our story begins!</h3>
+        </div>
       </div>
-      <div class="second-century">
-        <h1>5th century B.C.</h1>
-        <h3>Once upon a time</h3>
-        <h3>Ancient Greeks enjoy a dessert similar to ice cream.</h3>
-        <h3>And this is where our story begins!</h3>
+    </div>
+    <div class="sec-century">
+      <div class="container">
+        <div class="second-century">
+          <h1>1300s</h1>
+          <h3>Once upon a time</h3>
+          <h3>Marco Polo brings an early form of ice cream to Europe. We imagine the popular pool game started with ice cream-craving fans searching in the night for Marco! (Polo!)</h3>
+        </div>
+        <div class="first-century">
+          <img src="Img/1300s.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="thr-century">
+      <div class="container">
+        <div class="first-century">
+          <img src="Img/1700s.png" alt="">
+        </div>
+        <div class="second-century">
+          <h1>1700s</h1>
+  
+          <h3>Ooo, Fancy!</h3>
+          <h3>Ice Cream is introduced to America as a delicacy enjoyed by high society due to its expensive ingredients and lack of available refrigerators.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="for-century">
+      <div class="container">
+        <div class="second-century">
+          <h1>1776</h1>
+  
+          <h3>Open for business</h3>
+          <h3>America's first ice cream parlor opens its doors in New York. And you thought lines were bad today...</h3>
+        </div>
+        <div class="first-century">
+          <img src="Img/1776.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="fifth-century">
+      <div class="container">
+        <div class="first-century">
+          <img src="Img/1840s.png" alt="">
+        </div>
+        <div class="second-century">
+          <h1>1840s</h1>
+          <h3>A labor of love</h3>
+          <h3>Now that's what we call mass production. The ice cream churn is invented, and now we an make ice cream by the bucket</h3>
+          <h1>1851</h1>
+          <h3>First ice cream plant</h3>
+          <h3>Doors open to one of the sweetest buildings ever - the very first ice cream plant.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="sixth-century">
+      <div class="container">
+        <div class="second-century">
+          <h1>1880s</h1>
+          <h3>What a scoop</h3>
+          <h3>Get your fixin's and grap your bowls! The ice cream sundae is born.</h3>
+        </div>
+        <div class="first-century">
+          <img src="Img/1880s.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="seventh-century">
+      <div class="container">
+        <div class="first-century">
+          <img src="Img/1904s.png" alt="">
+        </div>
+        <div class="second-century">
+          <h1>1904</h1>
+          <h3>Hello! Drumstick</h3>
+          <h3>The ice cream cone is invented, making it easier to eat ice cream on the go.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="eigth-century">
+      <div class="container">
+        <div class="second-century">
+          <h1>1929</h1>
+          <h3>Things got rocky</h3>
+          <h3>William Dreyer and Joseph Edy create Rocky Road Ice Cream! It joins vanilla, chocolate and strawberry as most widely available flavors.</h3>
+        </div>
+        <div class="first-century">
+          <img src="Img/1929s.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="ninth-century">
+      <div class="container">
+        <div class="first-century">
+          <img src="Img/1960s.png" alt="">
+        </div>
+        <div class="second-century">
+          <h1>1960s</h1>
+          <h3>Häagen-Dazs</h3>
+          <h3>William Dreyer and Joseph Edy create Rocky Road Ice Cream! It joins vanilla, chocolate and strawberry as most widely available flavors.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tenth-century">
+      <div class="container">
+        <div class="second-century">
+          <h1>1984s</h1>
+          <h3>Start the fireworks</h3>
+          <h3>July is declared National Ice Cream Month in the United States.But You can still enjoy it all year long!</h3>
+        </div>
+        <div class="first-century">
+          <img src="Img/1984.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="eleventh-century">
+      <div class="container">
+        <div class="first-century">
+          <img src="Img/today.png" alt="">
+        </div>
+        <div class="second-century">
+          <h1>Today</h1>
+          <h3>For the love of Ice Cream</h3>
+          <h3>90% of freezers in the USA are chilling ice cream, making it the best selling treat in America next to cookies! Make sure your freezer does, too!</h3>
+        </div>
       </div>
     </div>
   </div>
-  <div class="sec-century">
-    <div class="container">
-      <div class="second-century">
-        <h1>1300s</h1>
-        <h3>Once upon a time</h3>
-        <h3>Marco Polo brings an early form of ice cream to Europe. We imagine the popular pool game started with ice cream-craving fans searching in the night for Marco! (Polo!)</h3>
+  <div class="trending">
+    <h1>Trending Now</h1>
+    <div class="img-container">
+      <div class="img">
+        <img src="Img/oreo.png" alt="">
       </div>
-      <div class="first-century">
-        <img src="Img/1300s.png" alt="">
+      <div class="img">
+        <img src="Img/outshine.png" alt="">
+      </div>
+      <div class="img">
+        <img src="Img/girleat.png" alt="">
       </div>
     </div>
   </div>
-  <div class="thr-century">
-    <div class="container">
-      <div class="first-century">
-        <img src="Img/1700s.png" alt="">
-      </div>
-      <div class="second-century">
-        <h1>1700s</h1>
+  <div class="footer" id="footer">
+            <div class="footer-header">
+                <div class="footer-first">
 
-        <h3>Ooo, Fancy!</h3>
-        <h3>Ice Cream is introduced to America as a delicacy enjoyed by high society due to its expensive ingredients and lack of available refrigerators.</h3>
-      </div>
-    </div>
-  </div>
-  <div class="for-century">
-    <div class="container">
-      <div class="second-century">
-        <h1>1776</h1>
+                    <div class="footer-logo">
+                        <img src="Img/Ice-Cream-Logo-Color-Outline-350x350.png" alt="">
+                    </div>
 
-        <h3>Open for business</h3>
-        <h3>America's first ice cream parlor opens its doors in New York. And you thought lines were bad today...</h3>
-      </div>
-      <div class="first-century">
-        <img src="Img/1776.png" alt="">
-      </div>
-    </div>
-  </div>
-  <div class="fifth-century">
-    <div class="container">
-      <div class="first-century">
-        <img src="Img/1840s.png" alt="">
-      </div>
-      <div class="second-century">
-        <h1>1840s</h1>
-        <h3>A labor of love</h3>
-        <h3>Now that's what we call mass production. The ice cream churn is invented, and now we an make ice cream by the bucket</h3>
-        <h1>1851</h1>
-        <h3>First ice cream plant</h3>
-        <h3>Doors open to one of the sweetest buildings ever - the very first ice cream plant.</h3>
-      </div>
-    </div>
-  </div>
-  <div class="sixth-century">
-    <div class="container">
-      <div class="second-century">
-        <h1>1880s</h1>
-        <h3>What a scoop</h3>
-        <h3>Get your fixin's and grap your bowls! The ice cream sundae is born.</h3>
-      </div>
-      <div class="first-century">
-        <img src="Img/1880s.png" alt="">
-      </div>
-    </div>
-  </div>
-  <div class="seventh-century">
-    <div class="container">
-      <div class="first-century">
-        <img src="Img/1904s.png" alt="">
-      </div>
-      <div class="second-century">
-        <h1>1904</h1>
-        <h3>Hello! Drumstick</h3>
-        <h3>The ice cream cone is invented, making it easier to eat ice cream on the go.</h3>
-      </div>
-    </div>
-  </div>
+                    <div class="footer-about">
+                        <h4>NIC Story</h4>
+                        <h4>NIC Talks</h4>
+                        <h4>Blogs</h4>
+                        <h4>Videos</h4>
+                        <h4>Press</h4>
+                        <h4>Outdoors</h4>
+                       
+                    </div>
+                    <div class="footer-about">
+                        <h4>Products</h4>
+                        <h4>Fruit N Nut</h4>
+                        <h4>International Inspiration</h4>
+                        <h4>Indian Inspirations</h4>
+                        <h4>Speciality</h4>
+                        <h4>Super Premium</h4>
+                        <h4>No Added Sugar</h4>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4>Our Parlours</h4>
+                        <h4>Contact</h4>
+                        <h4>Privacy Policy</h4>
+                    </div>
+                    <div class="footer-second">
+                        <img src="Img/panda.png" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+            <hr />
+            <div class="footer-footer">
+                <p>© 2026 Mama Bobba. Made by Prasum Shrestha</p>
+
+            </div>
+        </div>
 </body>
 </html>

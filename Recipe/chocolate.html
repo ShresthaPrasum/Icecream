@@ -66,6 +66,15 @@
             justify-content: space-between;
             margin-bottom: 10px;
         }
+        .step{
+            width: 100%;
+            height: 20px;
+            overflow: hidden;
+            transition: height 0.5s ease;
+        }
+        .active{
+            height: 90px;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -122,18 +131,69 @@
                     <hr>
                 </div>
                 <div class="second-detail">
-
+                    <div class="text"><h4><i class="fas fa-clock"></i>&nbsp;&nbsp;Times</h4></div>
+                    <div class="text">
+                        <h4>Active Time</h4>
+                        <h4>90mins</h4>
+                    </div>
+                    <div class="text">
+                        <h4>Inactive Time</h4>
+                        <h4>2 hours</h4>
+                    </div>
+                    <div class="text">
+                        <h4>Total Time</h4>
+                        <h4>3.5 hours</h4>
+                    </div>
+                    <hr>
                 </div>
             </div>
             <div class="ingredients">
                 <h1>Ingredients</h1>
                 <hr>
+                <div class="text"><h4>Chocolate Cupcakes:</h4></div>
+                <div class="text"><h4>2 cartons Haazen-Dazs Belgian Chocolate or Vanilla Ice Cream</h4></div>
+                <div class="text"><h4>2 cups of sugar</h4></div>
+                <div class="text"><h4>1-3/4 cups of all purpose flour</h4></div>
+                <div class="text"><h4>3/4 cup cocoa powder</h4></div>
+                <div class="text"><h4>1-1/2 teaspoon baking soda</h4></div>
+                <div class="text"><h4>1 teaspoon salt</h4></div>
+                <div class="text"><h4>2 eggs</h4></div>
+                <div class="text"><h4>1 cup whole milk</h4></div>
+                <div class="text"><h4>1/2 cup vegetable oil</h4></div>
+                <div class="text"><h4>2 teaspoon vanilla extract</h4></div>
+                <div class="text"><h4><b>Chocolate Buttercream Icing:</b></h4></div>
+                <div class="text"><h4>1 cup of softened butter</h4></div>
+                <div class="text"><h4>3-1/2 cups powdered sugar</h4></div>
+                <div class="text"><h4>1/2 cup of unsweetened cocoa powder</h4></div>
+                <div class="text"><h4>3 tablespoons cream</h4></div>
+                <div class="text"><h4>1/4 tablespoon salt</h4></div>
+                <div class="text"><h4>2 teaspoon vanilla extract</h4></div>
             </div>
             <div class="instructions">
                 <h1>Instructions</h1>
                 <hr>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="first">
+                            <div class="text">
+                                <h4>Step 1</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="text">
+                                <h4>For Chocolate Cupcakes: Preheat oven to 350F. In a mixing bowl, combine sugar, flour, cocoa powder, baking powder, baking soda, and salt. In another small bowl, combine, eggs, milk, vegetable oil, vanilla, and mix to combine</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="step">
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

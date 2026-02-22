@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Chocolate Ice Cream and Raspberry Sauce</title>
+    <style>
+        .hero{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            height: 100vh;
+            padding-left: 5rem;
+        }
+        .first-hero{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: 100%;
+        }
+        .first-hero h1{
+            font-size: 3.5rem;
+        }
+        .first-hero img{
+            width: 150px;
+        }
+        .second-hero{
+            height: 100%;
+            overflow: hidden;
+        }
+        .second-hero img{
+            height: 100%;
+            border-radius: 30px;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            padding: 5rem;
+            background-color: beige;
+        }
+        .main-head{
+            width: 90%;
+            font-size: larger;
+        }
+        .main-recipe{
+            display: flex;
+            gap: 50px;
+            width: 90%;
+        }
+        .main-recipe h1{
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .detail, .ingredients{
+            width: 20%;
+        }
+        .instructions{
+            width: 60%;
+        }
+        .text{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .step{
+            width: 100%;
+            height: 20px;
+            overflow: hidden;
+            transition: height 0.5s ease;
+        }
+        .active{
+            height: 90px;
+        }
+    </style>
+</head>
+<body>
+     <div class="header">
+        <div class="nav">
+            <div class="first-nav">
+                <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../history.html">History</a></li>
+                <li><a href="../recipe.html">Recipe</a></li>
+                </ul>
+            </div>
+            <div class="middle-nav">
+                <img src="../Img/Ice-Cream-Logo-Color-Outline-350x350.png" alt="">
+            </div>
+            <div class="last-nav">
+                <ul>
+                <li><a href="#flavours">Flavours</a></li>
+                <li><a href="#scoop">Scoop</a></li>
+                <li><a href="#footer">Footer</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="first-hero">
+            <h1>Crepes With Chocolate</h1>
+            <h1>Ice Cream and Raspberry Sauce</h1>
+            <img src="../Img/Logo-Haagen-Dazs-200x200.png" alt="">
+        </div>
+        <div class="second-hero">
+            <img src="../Img/first_recipe.jpeg" alt="">
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-head">
+            <hr>
+            <h1>
+                These warm buttery crepes topped with rich chocolate ice cream and drizzled in raspberry sauce taste like a bite of Parisian heaven.
+            </h1>
+        </div>
+        <div class="main-recipe">
+            <div class="detail">
+                <h1>Details</h1>
+                <hr>
+                <div class="first-detail">
+                    <div class="text">
+                        <h4>Servings</h4>
+                        <h4><i class="fas fa-user"></i>&nbsp;&nbsp;12</h4>
+                    </div>
+                    <div class="text">
+                        <h4>Difficulty</h4>
+                        <h4><i class="fas fa-star"> </i>&nbsp;&nbsp;Advanced</h4>
+                    </div>
+                    <hr>
+                </div>
+                <div class="second-detail">
+                    <div class="text">
+                        <h4><i class="fas fa-clock"></i>&nbsp;&nbsp;Times</h4>
+                    </div>
+                    <div class="text">
+                        <h4>Active time</h4>
+                        <h4>1 hour</h4>
+                    </div>
+                    <div class="text">
+                        <h4>Inactive Time</h4>
+                        <h4>0min</h4>
+                    </div>
+                    <div class="text">
+                        <h4>Total Time</h4>
+                        <h4>1 hour</h4>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="ingredients">
+                <h1>Ingredients</h1>
+                <hr>
+                <div class="text"><h4>Raspberry coulis:</h4></div>
+                <div class="text"><h4>1 to 2 cartons Häagen-Dazs® Chocolate Ice Cream</h4></div>
+                <div class="text"><h4>1 cup frozen raspberries</h4></div>
+                <div class="text"><h4>3 tablespoons granulated sugar</h4></div>
+                <div class="text"><h4>Crepes:</h4></div>
+                <div class="text"><h4>2 large eggs</h4></div>
+                <div class="text"><h4>2 tablespoons butter, melted and cooled slightly</h4></div>
+                <div class="text"><h4>2 cups milk</h4></div>
+                <div class="text"><h4>1/2 teaspoon vanilla extract</h4></div>
+                <div class="text"><h4>1 tablespoon granulated sugar</h4></div>
+                <div class="text"><h4>1/2 teaspoon salt</h4></div>
+                <div class="text"><h4>1-1/2 cups all-purpose flour</h4></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

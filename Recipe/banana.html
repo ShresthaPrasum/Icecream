@@ -3,14 +3,361 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
+        .hero{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            height: 100vh;
+            padding-left: 5rem;
+        }
+        .first-hero{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 60%;
+            height: 100%;
+        }
+        .first-hero h1{
+            font-size: 3.5rem;
+        }
+        .first-hero img{
+            width: 150px;
+        }
+        .second-hero{
+            height: 100%;
+            overflow: hidden;
+        }
+        .second-hero img{
+            height: 100%;
+            border-radius: 30px;
+        }
 
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            padding: 5rem;
+            background-color: beige;
+        }
+        .main-head{
+            width: 90%;
+            font-size: larger;
+        }
+        .main-recipe{
+            display: flex;
+            gap: 50px;
+            width: 90%;
+        }
+        .main-recipe h1{
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .detail, .ingredients{
+            width: 20%;
+        }
+        .instructions{
+            width: 60%;
+        }
+
+        .text{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .step{
+            width: 100%;
+            height: 20px;
+            overflow: hidden;
+            transition: height 0.5s ease;
+        }
+        .active{
+            height: 90px;
+        }
+        .other-recipe{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 4rem;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 90%;
+        }
+        .container h1{
+            font-size: 3rem;
+        }
+        .recipes{
+            display: flex;
+            margin-top: 2rem;
+            justify-content: space-between;
+        }
+        .recipe{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            width: 30%;
+        }
+
+        .recipe a{
+            width: 100%;
+            overflow: hidden;
+        }
+        .recipe img{
+            width: 100%;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+
+        }
+        .recipe img:hover{
+            transform: scale(1.1);
+        }
+        .recipe h2{
+            text-align: center;
+        }
     </style>
-    <title>Document</title>
+    <title>Caramalized Banana Split Rum</title>
 </head>
 <body>
-    
+    <div class="header">
+        <div class="nav">
+            <div class="first-nav">
+                <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../history.html">History</a></li>
+                <li><a href="../recipe.html">Recipe</a></li>
+                </ul>
+            </div>
+            <div class="middle-nav">
+                <img src="../Img/Ice-Cream-Logo-Color-Outline-350x350.png" alt="">
+            </div>
+            <div class="last-nav">
+                <ul>
+                <li><a href="#flavours">Flavours</a></li>
+                <li><a href="#scoop">Scoop</a></li>
+                <li><a href="#footer">Footer</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="first-hero">
+            <h1>Carmelized Banana Split Rum</h1>
+            <h1>Salted Caramel</h1>
+            <img src="../Img/Logo-Haagen-Dazs-200x200.png" alt="">
+        </div>
+        <div class="second-hero">
+            <img src="../Img/second_recipe.jpeg" alt="">
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-head">
+            <hr>
+            <h1>The classic banana split you love with an alcoholic twist so you'll love it even more.</h1>
+        </div>
+        <div class="main-recipe">
+            <div class="detail">
+                <h1>Details</h1>
+                <hr>
+                <div class="first-detail">
+                    <div class="text">
+                        <h4>Servings</h4>
+                        <h4><i class="fas fa-user"></i>&nbsp;&nbsp;1</h4>
+                    </div>
+                    <div class="text">
+                        <h4>Difficulty</h4>
+                        <h4><i class="fas fa-star"></i>Easy</h4>
+                    </div>
+                    <hr>
+                </div>
+                <div class="second-detail">
+                    <div class="text">
+                        <h4><i class="fas fa-clock"></i>&nbsp;&nbsp;Times</h4>
+                    </div>
+                    <div class="text">
+                        <h4>Active Time</h4>
+                        <h4>30min</h4>
+                    </div>
+                    <div class="text">
+                        <h4>Inactive Time</h4>
+                        <h4>0 min</h4>
+                    </div>
+                    <div class="text">
+                        <h4>Total Time</h4>
+                        <h4>30min</h4>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="ingredients">
+                <h1>Ingredients</h1>
+                <hr>
+                <div class="text">
+                    <h4>2 scoops Häagen-Dazs® Rum Raisin Ice Cream</h4>
+                </div>
+                <div class="text">
+                    <h4>Caramelized Bananas:</h4>
+                </div>
+                <div class="text"><h4>2 small, firm bananas (peeled) </h4></div>
+                <div class="text"><h4>1 tablespoon butter</h4></div>
+                <div class="text"><h4>3 tablespoons dark brown sugar</h4></div>
+                <div class="text"><h4>3 tablespoons rum (can substitute orange juice)</h4></div>
+                <div class="text"><h4>2 tablespoons toasted pecans</h4></div>
+                <div class="text"><h4>Sweetened whipped cream</h4></div>
+                <div class="text"><h4>Maraschino cherries</h4></div>
+                <div class="text"><h4>Salted Caramel Sauce:</h4></div>
+                <div class="text"><h4>1 cup packed brown sugar</h4></div>
+                <div class="text"><h4>1/2 cup heavy cream</h4></div>
+                <div class="text"><h4>4 tablespoons butter</h4></div>
+                <div class="text"><h4>3 teaspoons vanilla</h4></div>
+                <div class="text"><h4>Dash of salt</h4></div>
+            </div>
+            <div class="instructions">
+                <h1>Instructions</h1>
+                <hr/>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="first">
+                            <div class="text">
+                                <h4>Step 1</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="text">
+                                <h4>Carefully cut bananas in half lengthwise. Melt butter in medium-sized skillet, add brown sugar, and place banana halves on top, cut side up.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="step">
+                        <div class="first">
+                            <div class="text">
+                                <h4>Step 2</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="text">
+                                <h4>
+                                    Cook for about 30 seconds on medium-high. Add rum, cook for 30 more seconds, and then carefully turn bananas over and cook for 1-2 minutes more, basting occasionally with the sauce. Remove from heat.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="step">
+                        <div class="first">
+                            <div class="text">
+                                <h4>Step 3</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="text">
+                                <h4>
+                                    Place one banana-half in the bottom of the bowl along the edge. Top with another banana-half at a 45-degree angle.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="step">
+                        <div class="firs">
+                            <div class="text">
+                                <h4>Step 4</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="text">
+                                <h4>
+                                    Top bananas with 2 scoops Häagen-Dazs® Rum Raisin Ice Cream. Top ice cream with salted caramel sauce (directions below). Add toasted pecans, sweetened whipped cream, and a maraschino cherry.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="step">
+                        <div class="first">
+                            <div class="text">
+                                <h4>Step 5</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="text">
+                                <h4>
+                                    Salted Caramel Sauce: Combine brown sugar, cream, and salt in a medium-sized saucepan over medium heat. Cook until thickened (about 5-7 minutes). Add vanilla, stir, and let cool for a few minutes. Store leftovers in a glass jar. 
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other-recipe">
+        <div class="container">
+            <h1>Party-pleaser recipes</h1>
+            <div class="recipes">
+                <div class="recipe">
+                    <a href="chocolate.html"><img src="../Img/recipe1.png" alt=""></a>
+                    <h2>Chocolate Ice cream cupcakes</h2>
+                </div>
+                <div class="recipe">
+                    <a href="raspberry.html"><img src="../Img/recipe3.png" alt=""></a>
+                    <h2>Chocolate Ice Cream and Raspberry Sauce</h2>
+                </div>
+                <div class="recipe">
+                    <a href="vanilla.html"><img src="../Img/recipe4.png" alt=""></a>
+                    <h2>Vanilla Ice Cream Brownie</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-header">
+            <div class="footer-first">
+                <div class="footer-logo">
+                    <img src="../Img/Ice-Cream-Logo-Color-Outline-350x350.png" alt="">
+                </div>
+                <div class="footer-about">
+                    <h4>NIC Story</h4>
+                    <h4>NIC Talks</h4>
+                    <h4>Blogs</h4>
+                    <h4>Videos</h4>
+                    <h4>Press</h4>
+                    <h4>Outdoors</h4>
+                </div>
+                <div class="footer-about">
+                    <h4>Products</h4>
+                    <h4>Fruit N Nut</h4>
+                    <h4>InternationalInspiration</h4>
+                    <h4>Indian Inspirations</h4>
+                    <h4>Speciality</h4>
+                    <h4>Super Premium</h4>
+                    <h4>No Added Sugar</h4>
+                </div>
+                <div class="footer-contact">
+                    <h4>Our Parlours</h4>
+                    <h4>Contact</h4>
+                    <h4>Privacy Policy</h4>                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-footer">
+            <p>© 2026 Mama Cream. Made by Prasum Shrestha</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

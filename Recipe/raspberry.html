@@ -57,10 +57,10 @@
             margin-bottom: 1.5rem;
         }
         .detail, .ingredients{
-            width: 20%;
+            width: 60%;
         }
         .instructions{
-            width: 60%;
+            width: 40%;
         }
         .text{
             display: flex;
@@ -75,6 +75,49 @@
         }
         .active{
             height: 90px;
+        }
+        .other-recipe{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 4rem;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 90%;
+        }
+        .container h1{
+            font-size: 3rem;
+        }
+        .recipes{
+            display: flex;
+            margin-top: 2rem;
+            justify-content: space-between;
+        }
+        .recipe{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            width: 30%;
+        }
+        .recipe a{
+            width: 100%;
+            overflow: hidden;
+        }
+        .recipe img{
+            width: 100%;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+        .recipe img:hover{
+            transform: scale(1.1);
+        }
+        .recipe h2{
+            text-align: center;
         }
     </style>
 </head>
@@ -107,7 +150,7 @@
             <img src="../Img/Logo-Haagen-Dazs-200x200.png" alt="">
         </div>
         <div class="second-hero">
-            <img src="../Img/first_recipe.jpeg" alt="">
+            <img src="../Img/third_recipe.jpeg" alt="">
         </div>
     </div>
     <div class="main">
@@ -167,7 +210,154 @@
                 <div class="text"><h4>1/2 teaspoon salt</h4></div>
                 <div class="text"><h4>1-1/2 cups all-purpose flour</h4></div>
             </div>
+            <div class="instruction">
+                <h1>Instructions</h1>
+                <hr>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="first">
+                            <div class="text">
+                                <h4>Step 1</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="text">
+                                <h4>
+                                    For Crepes: Place eggs, butter, milk, vanilla extract, sugar, salt and flour into a blender; cover. Blend for about 10 seconds or until smooth. Transfer to glass measuring cup or a small pitcher.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="step">
+                        <div class="first">
+                            <div class="text">
+                                <h4>Step 2</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="text">
+                                <h4>Refrigerate for 1 hour to let the bubbles subside.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="step">
+                        <div class="first">
+                            <div class="text">
+                                <h4>Step 3</h4>
+                                
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="text">
+                                <h4>For Raspberry Coulis: Place raspberries and sugar in a small saucepan. Cook over medium heat for 5-7 minutes or until the raspberries are soft and release juice. Pour mixture into blender or food processor; cover. Blend until smooth. Strain through a fine sleeve.Store coulis in the refrigerator in a covered container until ready to serve.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="step">
+                        <div class="first">
+                            <div class="text">
+                                <h4>Step 4</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="text">
+                                <h4>
+                                    To make crepes, heat a 9-inch nonstick skillet or crepe pan over medium heat and lightly coat with butter. Pour 1/4 cup batter into the center of the skillet and swirl until the batter covers the bottom in a thin layer. Cook for about 1 minute or until light brown and the top begins to dry. Flip and cook for an additional 30 seconds.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="step">
+                        <div class="first">
+                            <div class="text">
+                                <h4>
+                                    Step 5
+                                </h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="text">
+                                <h4>
+                                    Lay the crepe out flat to cool on a clean towel, plate, or cutting board. Repeat procedure with remaining crepe batter. Fold each crepe in half, then fold in half again. Place on a plate and top with a scoop of ice cream. Drizzle with raspberry coulis and serve immediately.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="other-recipe">
+        <div class="container">
+            <h1>Party-pleaser recipes</h1>
+            <div class="recipes">
+                <div class="recipe">
+                    <a href="chocolate.html"><img src="../Img/recipe1.png" alt=""></a>
+                    <h2>Chocolate Ice Cream and Raspberry Sauce</h2>
+                </div>
+                <div class="recipe">
+                    <a href="banana.html"><img src="../Img/recipe2.png" alt=""></a>
+                    <h2>Caramelized Banana Split Rum</h2>
+                </div>
+                <div class="recipe">
+                    <a href="vanilla.html"><img src="../Img/recipe4.png" alt=""></a>
+                    <h2>Vanilla Ice Cream Brownie</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+            <div class="footer-header">
+                <div class="footer-first">
+
+                    <div class="footer-logo">
+                        <img src="../Img/Ice-Cream-Logo-Color-Outline-350x350.png" alt="">
+                    </div>
+
+                    <div class="footer-about">
+                        <h4>NIC Story</h4>
+                        <h4>NIC Talks</h4>
+                        <h4>Blogs</h4>
+                        <h4>Videos</h4>
+                        <h4>Press</h4>
+                        <h4>Outdoors</h4>
+                       
+                    </div>
+                    <div class="footer-about">
+                        <h4>Products</h4>
+                        <h4>Fruit N Nut</h4>
+                        <h4>International Inspiration</h4>
+                        <h4>Indian Inspirations</h4>
+                        <h4>Speciality</h4>
+                        <h4>Super Premium</h4>
+                        <h4>No Added Sugar</h4>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4>Our Parlours</h4>
+                        <h4>Contact</h4>
+                        <h4>Privacy Policy</h4>
+                    </div>
+                    
+                </div>
+            </div>
+            <hr />
+            <div class="footer-footer">
+                <p>© 2026 Mama Cream. Made by Prasum Shrestha</p>
+
+            </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
